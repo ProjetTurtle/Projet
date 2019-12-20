@@ -7,7 +7,7 @@ public class Carte {
 	public void avancer(Joueur joueur, Plateau plateau, Fin fin, Tour tour) {
 
 		if (joueur.getOrientation(tour.getIndice()) == 'N') {
-			System.out.println("je fais n'importe quoi");
+
 
 			if (joueur.getPosition(tour.getIndice()) < 9) {
 

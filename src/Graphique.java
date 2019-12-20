@@ -18,10 +18,24 @@ public class Graphique {
 	    //Définit sa taille : 400 pixels de large et 100 pixels de haut
 	    fenetre.setSize(1000, 1000);
 	    
-	    //Nous demandons maintenant à notre objet de se positionner au centre
+	    
+	    //Positionne la fenêtre au centre de 'écran
 	    fenetre.setLocationRelativeTo(null);
 	    
+	    //Positionne la fenêtre à l'écran
+	    // fenetre.setLocation(int x, int y)
+	    // avec x et y définissant la position de l'angle en haut à gauche de la fenêtre
+	    // l'origine étant en haut à gauche
 	    
+	    //Empêcher le redimensionnement de la fenêtre
+	    // fenetre.setResizable(boolean b)
+	    // avec b = true pour l'autoriser
+	    // avec b = false pour l'interdire
+	    
+	    //Garder la fenêtre au premier plan
+	    // fenetre.setAlwaysOnTop(boolean b)
+	    // avec b = true pour l'appliquer
+	    // 
 	    
 
 

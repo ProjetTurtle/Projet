@@ -14,16 +14,17 @@ public class Panneau extends JPanel {
 	  
 	  // Permet d'insérer une image
 	    
-	    //try {
-	        //Image img = ImageIO.read(new File("background.jpeg"));
-	        //g.drawImage(img, 0, 0, this.getWidth(), this.getHeight(), this);
+	    try {
+	    	System.out.println("Working directory : " + System.getProperty("user.dir"));
+	        Image img = ImageIO.read(new File("images/background.jpeg"));
+	        g.drawImage(img, 0, 0, this.getWidth(), this.getHeight(), this);
 	         //Pour une image de fond
 	         //g.drawImage(img, 0, 0, this.getWidth(), this.getHeight(), this);
 	         //sinon
 	         //g.drawImage(img, 0, 0, this);
-	      //} catch (IOException e) {
-	        //e.printStackTrace();
-	      //}
+	      } catch (IOException e) {
+	        e.printStackTrace();
+	      }
     
     
     // fill pour plein

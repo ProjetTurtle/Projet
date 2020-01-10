@@ -1,4 +1,7 @@
+import java.awt.Color;
+import java.awt.Graphics;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class Graphique {
 	public static void main(String[] args){
@@ -35,12 +38,26 @@ public class Graphique {
 	    //Garder la fenêtre au premier plan
 	    // fenetre.setAlwaysOnTop(boolean b)
 	    // avec b = true pour l'appliquer
-	    // 
+	    // avec b = false pour ne pas l'appliquer
 	    
+	    JPanel pan = new JPanel();
+	    
+	    //Définition de sa couleur de fond
+	    pan.setBackground(Color.ORANGE);
+	    
+	    //On prévient notre JFrame que notre JPanel sera son content pane
+	    fenetre.setContentPane(pan);               
+	    fenetre.setVisible(true);
 
 
 	    
 	    
 	  } 
+	
+	 public static void paintComponent(Graphics g){
+		    //Vous verrez cette phrase chaque fois que la méthode sera invoquée
+		    System.out.println("Je suis exécutée !"); 
+		    g.fillOval(20, 20, 75, 75);
+		  }
 
 }

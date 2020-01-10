@@ -8,12 +8,14 @@ public class Joueur {
 	private int numero;
 	private int numeroPassage;
 	private String couleur;
-	private int position;
-	private int positionDepart;
+	private int positionLigne;
+	private int positionColonne;
+	private int positionDepartLigne;
+	private int positionDepartColonne;
 	private char orientation = 'S';
 	private int points = 0;
 	
-	private ArrayList<String> deck = new  ArrayList<String>();
+	private ArrayList<String> deck = new ArrayList<String>();
 	private ArrayDeque<String> fileInstruction = new ArrayDeque<String>();
 	
 	private int fileInstructionMode = 0;
@@ -47,17 +49,29 @@ public class Joueur {
 	public void setCouleur(String couleur) {
 		this.couleur = couleur;
 	}
-	public int getPosition() {
-		return position;
+	public int getPositionLigne() {
+		return positionLigne;
 	}
-	public void setPosition(int position) {
-		this.position = position;
+	public void setPositionLigne(int positionLigne) {
+		this.positionLigne = positionLigne;
 	}
-	public int getPositionDepart() {
-		return positionDepart;
+	public int getPositionColonne() {
+		return positionColonne;
 	}
-	public void setPositionDepart(int positionDepart) {
-		this.positionDepart = positionDepart;
+	public void setPositionColonne(int positionColonne) {
+		this.positionColonne = positionColonne;
+	}
+	public int getPositionDepartLigne() {
+		return positionDepartLigne;
+	}
+	public void setPositionDepartLigne(int positionDepartLigne) {
+		this.positionDepartLigne = positionDepartLigne;
+	}
+	public int getPositionDepartColonne() {
+		return positionDepartColonne;
+	}
+	public void setPositionDepartColonne(int positionDepartColonne) {
+		this.positionDepartColonne = positionDepartColonne;
 	}
 	public char getOrientation() {
 		return orientation;
@@ -105,5 +119,9 @@ public class Joueur {
 	public void setNombreObstacleGlace(int nombreObstacleGlace) {
 		this.nombreObstacleGlace = nombreObstacleGlace;
 	}
+	
+	
+	
+	
 	
 }

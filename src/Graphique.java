@@ -1,9 +1,8 @@
 import java.awt.Color;
-import java.awt.Graphics;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class Graphique {
+public class Graphique extends JFrame {
 	public static void main(String[] args){
 		
 		// créer une fenêtre
@@ -20,7 +19,8 @@ public class Graphique {
 	    
 	    //Définit sa taille : 400 pixels de large et 100 pixels de haut
 	    fenetre.setSize(1000, 1000);
-	    
+	    //la méthode pack de la classe JFrame calcule 
+	    //la dimension de la fenêtre en fonction de ce qui est mis à l'intérieur. 
 	    
 	    //Positionne la fenêtre au centre de 'écran
 	    fenetre.setLocationRelativeTo(null);
@@ -40,7 +40,7 @@ public class Graphique {
 	    // avec b = true pour l'appliquer
 	    // avec b = false pour ne pas l'appliquer
 	    
-	    JPanel pan = new JPanel();
+	    Panneau pan = new Panneau();
 	    
 	    //Définition de sa couleur de fond
 	    pan.setBackground(Color.ORANGE);
@@ -52,12 +52,5 @@ public class Graphique {
 
 	    
 	    
-	  } 
-	
-	 public static void paintComponent(Graphics g){
-		    //Vous verrez cette phrase chaque fois que la méthode sera invoquée
-		    System.out.println("Je suis exécutée !"); 
-		    g.fillOval(20, 20, 75, 75);
-		  }
-
+	  }
 }

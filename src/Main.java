@@ -21,6 +21,7 @@ public class Main {
 		// tests
 		Fenetre fenetre = new Fenetre();
 		fenetre.graphique();
+		
 
 		
 		/////////////////////////////////////////
